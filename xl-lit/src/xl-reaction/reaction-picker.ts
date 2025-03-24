@@ -56,11 +56,14 @@ export class XlReactionPicker extends LitElement {
   override render() {
     return html`
       <button 
+        aria-label="Add reaction"
         @click=${this.togglePickerSheet}
       >
         ${iconAddReaction}
       </button> 
-      <div class="reaction-picker-sheet ${classMap({ open: this._sheetOpened })}">
+      <div 
+        aria-role="listbox"
+        class="reaction-picker-sheet ${classMap({ open: this._sheetOpened })}">
         <slot @click=${this._handleReactionClick}></slot>
       </div>
     `
