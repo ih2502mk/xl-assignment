@@ -1,0 +1,9 @@
+div.reactions-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--space-050, 4px);
+  width: 92vw;
+  max-width: 720px;
+  margin: auto;
+}

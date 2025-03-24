@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "es2021",
+    "useDefineForClassFields": false,
+    "experimentalDecorators": true,
+    "module": "es2022",
+    "moduleResolution": "bundler",
+    "types": ["@vitest/browser/providers/playwright"],
+    "verbatimModuleSyntax": true
+  }
+}
